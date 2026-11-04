@@ -1,7 +1,7 @@
 using System.Net;
 using System.Text.RegularExpressions;
-using NaiveCrm.Models;
-using NaiveCrm.Services;
+using Crm.Models;
+using Crm.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();

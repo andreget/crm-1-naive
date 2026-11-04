@@ -1,4 +1,4 @@
-﻿# NaiveCrm
+﻿# Crm
 
 En liten webapp for kundebehandling (CRM). Den er startpunktet for programmeringskurset og er med vilje enkel. Du skal forbedre den steg for steg i de kommende modulene.
 
@@ -29,9 +29,9 @@ git clone <url-to-your-repository>
 
 ## Kjør appen
 
-**Visual Studio:** åpne `NaiveCrm.csproj` og trykk `F5`. Nettleseren åpner <http://localhost:5080>.
+**Visual Studio:** åpne `Crm.csproj` og trykk `F5`. Nettleseren åpner <http://localhost:5080>.
 
-**Kommandolinjen:** i mappen som inneholder `NaiveCrm.csproj`:
+**Kommandolinjen:** i mappen som inneholder `Crm.csproj`:
 
 ```
 dotnet run
@@ -66,6 +66,6 @@ git checkout customers.json
 
 | Problem | Hva du bør sjekke |
 |---|---|
-| Feil eller blank side rett etter oppstart | Appen er startet fra feil mappe. Start den fra mappen med `NaiveCrm.csproj`. |
+| Feil eller blank side rett etter oppstart | Appen er startet fra feil mappe. Start den fra mappen med `Crm.csproj`. |
 | Port 5080 er opptatt | Endre `applicationUrl` i `Properties/launchSettings.json`. |
 | Dataene ser rare ut etter eksperimentering | Gjenopprett `customers.json` og slett `activities.json`. |

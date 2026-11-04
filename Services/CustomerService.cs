@@ -1,7 +1,7 @@
 using System.Text.Json;
-using NaiveCrm.Models;
+using Crm.Models;
 
-namespace NaiveCrm.Services;
+namespace Crm.Services;
 
 public class CustomerService
 {

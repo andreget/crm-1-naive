@@ -1,4 +1,4 @@
-﻿namespace NaiveCrm.Models;
+﻿namespace Crm.Models;
 
 public class Activity
 {
