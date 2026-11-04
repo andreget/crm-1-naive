@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customers - Naive CRM</title>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <header>
+        <a href="/">Naive CRM</a>
+        <a href="/activities">Activities</a>
+    </header>
+
+    <main>
+        <div class="toolbar">
+            <h1>Customers</h1>
+            <a class="button" href="/customers/new">New customer</a>
+        </div>
+
+        <form method="get" action="/" class="filters">
+            <input type="search" name="search" value="{{search}}" placeholder="Search name, email or company">
+            <select name="status" id="status">
+                {{statusOptions}}
+            </select>
+            <button type="submit">Filter</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{rows}}
+            </tbody>
+        </table>
+
+        {{empty}}
+    </main>
+
+    <script src="/js/site.js"></script>
+</body>
+</html>

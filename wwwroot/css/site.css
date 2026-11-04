@@ -1,0 +1,133 @@
+:root {
+    --bg: #f5f6f8;
+    --card: #ffffff;
+    --text: #1f2933;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --danger: #dc2626;
+    --border: #d9dde3;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    background: #111827;
+    padding: 1rem 2rem;
+}
+
+header a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.filters input { flex: 1; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border: 1px solid var(--border);
+}
+
+th, td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.actions { text-align: right; white-space: nowrap; }
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    max-width: 520px;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.25rem;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font: inherit;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+button, .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font: inherit;
+    color: white;
+    background: var(--primary);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.small { padding: 0.25rem 0.6rem; font-size: 0.85rem; }
+.button.secondary { background: var(--muted); }
+.danger { background: var(--danger); }
+
+.buttons { margin-top: 1.5rem; display: flex; gap: 0.5rem; }
+
+.error { color: var(--danger); font-weight: 600; }
+.muted { color: var(--muted); }
+
+header a + a {
+    margin-left: 1.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    margin-top: 2rem;
+}
+
+.actions form {
+    display: inline;
+}
+
+button.small {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.85rem;
+}
+
+tr.overdue td {
+    background: #fef2f2;
+}
+
+tr.done td {
+    color: var(--muted);
+    text-decoration: line-through;
+}

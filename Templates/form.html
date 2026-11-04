@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}} - Naive CRM</title>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <header>
+        <a href="/">Naive CRM</a>
+    </header>
+
+    <main>
+        <h1>{{title}}</h1>
+
+        {{error}}
+
+        <form method="post" action="{{action}}" class="card">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="{{name}}" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="{{email}}" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" value="{{phone}}">
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" value="{{company}}">
+
+            <label for="status">Status</label>
+            <select id="status" name="status">
+                {{statusOptions}}
+            </select>
+
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4">{{notes}}</textarea>
+
+            <div class="buttons">
+                <button type="submit">Save</button>
+                <a class="button secondary" href="/">Cancel</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

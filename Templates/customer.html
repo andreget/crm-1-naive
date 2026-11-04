@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{name}} - Naive CRM</title>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <header>
+        <a href="/">Naive CRM</a>
+        <a href="/activities">Activities</a>
+    </header>
+
+    <main>
+        <div class="toolbar">
+            <h1>{{name}}</h1>
+            <a class="button" href="/customers/{{id}}/edit">Edit customer</a>
+        </div>
+
+        <div class="card">
+            <p><strong>Company:</strong> {{company}}</p>
+            <p><strong>Email:</strong> {{email}}</p>
+            <p><strong>Phone:</strong> {{phone}}</p>
+            <p><strong>Status:</strong> {{status}}</p>
+            <p><strong>Notes:</strong> {{notes}}</p>
+        </div>
+
+        <h2>New activity</h2>
+        <form method="post" action="/customers/{{id}}/activities" class="card">
+            <label for="type">Type</label>
+            <select id="type" name="type">
+                {{typeOptions}}
+            </select>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="date">Date and time</label>
+            <input type="datetime-local" id="date" name="date" value="{{defaultDate}}" required>
+
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Add activity</button>
+            </div>
+        </form>
+
+        <h2>Activities</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Title</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{rows}}
+            </tbody>
+        </table>
+
+        {{empty}}
+    </main>
+</body>
+</html>

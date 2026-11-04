@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "Name": "Ingrid Haugen",
+    "Email": "ingrid@nordlys.no",
+    "Phone": "91234567",
+    "Company": "Nordlys AS",
+    "Notes": "Signed the annual agreement in January.",
+    "Status": "Active",
+    "Created": "2026-01-12T09:30:00"
+  },
+  {
+    "Id": 2,
+    "Name": "Marius Berg",
+    "Email": "marius@fjordtech.no",
+    "Phone": "92345678",
+    "Company": "FjordTech",
+    "Notes": "Asked for a demo. Follow up next week.",
+    "Status": "Lead",
+    "Created": "2026-02-03T14:15:00"
+  },
+  {
+    "Id": 3,
+    "Name": "Sofie Lund",
+    "Email": "sofie@bergbygg.no",
+    "Phone": "93456789",
+    "Company": "Berg Bygg",
+    "Notes": "",
+    "Status": "Active",
+    "Created": "2026-03-18T11:00:00"
+  },
+  {
+    "Id": 4,
+    "Name": "Tarjei Moen",
+    "Email": "tarjei@havnetorget.no",
+    "Phone": "94567890",
+    "Company": "Havnetorget",
+    "Notes": "Cancelled the subscription.",
+    "Status": "Inactive",
+    "Created": "2025-11-27T16:45:00"
+  },
+  {
+    "Id": 5,
+    "Name": "Camilla Dahl",
+    "Email": "camilla@solbakken.no",
+    "Phone": "95678902",
+    "Company": "Solbakken Regnskap",
+    "Notes": "Met at a conference.",
+    "Status": "Lead",
+    "Created": "2026-04-09T08:20:00"
+  }
+]

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delete customer - Naive CRM</title>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <header>
+        <a href="/">Naive CRM</a>
+    </header>
+
+    <main>
+        <h1>Delete customer</h1>
+
+        <form method="post" action="{{action}}" class="card">
+            <p>Delete <strong>{{name}}</strong> ({{company}})?</p>
+
+            <div class="buttons">
+                <button type="submit" class="danger">Delete</button>
+                <a class="button secondary" href="/">Cancel</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
